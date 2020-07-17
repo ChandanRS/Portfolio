@@ -13,15 +13,25 @@
 
 body{
     /* background-color: rgb(255, 189, 177) */
-    background-image: linear-gradient(130deg,#000000, #292631,#0c0c0c,#000000, #292631,#0c0c0c);
-  
-    
+    background-image: linear-gradient(-45deg,rgb(133, 133, 133),rgb(39, 14, 14),#000000, #292631,#ffffff)
+    /* background-image: linear-gradient(130deg,#000000, #292631,#0c0c0c,#000000, #292631,#0c0c0c); */
 }
+
+html,body{
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 
 i{
     color: rgb(218, 178, 178);
+   
 }
 
+i:hover{
+    opacity: 0.8;
+    color: rgb(250, 125, 125);
+}
 
 /* -----------------------------------NAV BAR-------------------------- */
 
@@ -36,8 +46,16 @@ i{
 
 .logo{
     letter-spacing: 2px;
-    font-size: 1.3rem;
+    font-size: 2.5rem;
     padding-left: 5vw;
+    font-family: 'Grenze Gotisch', cursive;
+    /* color: whitesmoke; */
+    /* background: linear-gradient(154deg,blue,white,rgb(37, 34, 35)); */
+    letter-spacing: 3px;
+    background: -webkit-linear-gradient(rgb(255, 255, 255), rgb(104, 106, 112));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
    /* position: absolute;
    left: 2%; */
 }
@@ -64,8 +82,8 @@ nav a{
 }
 
 nav a:hover{
-    color: rgb(255, 255, 255);
-    font-size: 1.3rem;
+    color: rgb(250, 125, 125);
+    /* font-size: 1.3rem; */
 }
 .burger{
     display: none;
@@ -132,6 +150,7 @@ nav a:hover{
     padding: 2rem;
     color: var(--header-font-color);
     letter-spacing: 0.1rem;
+   
 }
 
 .container{
@@ -158,6 +177,7 @@ nav a:hover{
 
 .skill img:hover{
    opacity: 0.8;
+   color: rgb(250, 125, 125);
 }
 
 .skill-text{
@@ -281,8 +301,8 @@ hr{
 
 @media only screen and (max-width:768px){
 
-    body{
-        
+    html,body{
+        max-width: 100%;
         overflow-x: hidden;
     }
 
@@ -307,7 +327,7 @@ hr{
     }
     ul{
         top: 10vh;
-        position: absolute;
+        position: fixed;
         display: flex;
         justify-content: space-between;
         width: 40vw;
@@ -367,12 +387,12 @@ hr{
      .banner-title{
         color: rgb(187, 198, 248);
          font-size: 2em;
-         margin-left: -10%;
+         margin-left: -15%;
     }
     
      .banner-subtitle{
         color: rgb(108, 88, 221);
-        font-size: 1.1em;
+        font-size: 0.9rem;
         margin-left: -25%; 
     } 
 
@@ -389,7 +409,7 @@ hr{
         display: block;
         font-size: var(--header-font-size);
         font-weight: bold;
-        width: 60%;
+       
         margin:auto;
         padding: 0.8rem;
        margin-left: 25vw;
@@ -461,7 +481,7 @@ hr{
         background-color: transparent;
         top:30vh;
         left:10vw;
-        width: 20rem;
+        width: 80vw;
     }
 
     .contact-logo{
@@ -470,11 +490,22 @@ hr{
     }
 
     .skill-text{
-        font-weight: bold;
         margin: auto;
-        font-size: 1rem;
+        font-size: 0.9rem;
         width: auto;
+        font-weight: 700;
+        color: #292631;
+        font-family: sans-serif;
     }
     
-    
+    .skill{
+        padding: 1rem;
+    }
+
+    .skill img{
+        height: 10vw;
+        width: 10vw;
+        margin: auto;
+        margin-bottom: 1.1rem;
+    }
 }
