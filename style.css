@@ -13,9 +13,13 @@
 
 body{
     /* background-color: rgb(255, 189, 177) */
-    background-image: linear-gradient(#5c5c5c, #457265,#3c4749);
+    background-image: linear-gradient(130deg,#252735, #a2cfc3,#3c4041);
     /* overflow-x: hidden; */
     
+}
+
+i{
+    color: rgb(218, 178, 178);
 }
 
 
@@ -192,6 +196,17 @@ nav a:hover{
     color: #1a2e2e;
 }
 
+.project-details i{
+    color: #142424;
+    align-self: flex-end;
+}
+
+.project-details .links{
+    width: 25vw;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.8rem;
+}
 .project-desc{
     font-size: 1.2rem;
 }
