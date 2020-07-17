@@ -7,14 +7,14 @@
     --header-font-size : 1.8rem;
     --subheader-font-size : 1.1rem;
     --heading-padding: 0.8rem;
-    --header-font-color: whitesmoke;
+    --header-font-color: rgb(206, 184, 184);
 }
 
 
 body{
     /* background-color: rgb(255, 189, 177) */
     background-image: linear-gradient(130deg,#000000, #292631,#0c0c0c,#000000, #292631,#0c0c0c);
-    /* overflow-x: hidden; */
+  
     
 }
 
@@ -142,7 +142,7 @@ nav a:hover{
 
 .skill{
      display: flex;
-     width: 20vw;
+     /* width: 20vw; */
      justify-content: center;
      padding: 2rem;
      flex-direction: column;
@@ -282,9 +282,11 @@ hr{
 @media only screen and (max-width:768px){
 
     body{
-        width: 100vw;
+        
         overflow-x: hidden;
     }
+
+    
     .nav-bar{
         height: 10vh;
         display: flex;
@@ -387,10 +389,10 @@ hr{
         display: block;
         font-size: var(--header-font-size);
         font-weight: bold;
-        width: 50%;
+        width: 60%;
         margin:auto;
-        padding: var(--heading-padding);
-       
+        padding: 0.8rem;
+       margin-left: 25vw;
     }
     @keyframes myInfoSlide{
         from{
@@ -406,7 +408,6 @@ hr{
      .container{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        background-color: rgb(245, 177, 88);
         justify-content: space-evenly;
     }
 
@@ -418,6 +419,7 @@ hr{
         width: 50%;
         margin:auto;
         padding: var(--heading-padding);
+        
     }
 
 
@@ -428,19 +430,22 @@ hr{
     }
 
     #project-image{
-        height: 40vh;
+        height: 30vh;
         width: 80vw;
     }
 
     .project-details{
-       
+       height: auto;
         width: 80vw;
         display: grid;
         place-items: center;
         margin:auto;
        margin-bottom: 2rem;
     }
-    
+    .project-desc{
+        font-size: 1.1rem;
+        padding: 0.4rem;
+    }
     .logo{
        
         margin-left: -4rem;
@@ -453,10 +458,9 @@ hr{
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
-        padding: 2rem;
         background-color: transparent;
         top:30vh;
-        left:16vw;
+        left:10vw;
         width: 20rem;
     }
 
@@ -464,5 +468,13 @@ hr{
         width: 2rem;
         height:2rem;
     }
+
+    .skill-text{
+        font-weight: bold;
+        margin: auto;
+        font-size: 1rem;
+        width: auto;
+    }
+    
     
 }
