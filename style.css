@@ -13,7 +13,7 @@
 
 body{
     /* background-color: rgb(255, 189, 177) */
-    background-image: linear-gradient(130deg,#252735, #a2cfc3,#3c4041);
+    background-image: linear-gradient(130deg,#000000, #292631,#0c0c0c,#000000, #292631,#0c0c0c);
     /* overflow-x: hidden; */
     
 }
@@ -156,6 +156,10 @@ nav a:hover{
     margin-bottom: 1.1rem;
 }
 
+.skill img:hover{
+   opacity: 0.8;
+}
+
 .skill-text{
     font-weight: bold;
     margin: auto;
@@ -187,6 +191,7 @@ nav a:hover{
 }
 
 .project-details{
+    box-shadow: 5px 5px 10px 5px rgb(8, 8, 8);
     margin: 2rem;
     width: 45vw;
     display: grid;
