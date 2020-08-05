@@ -12,9 +12,8 @@
 
 
 body{
-    /* background-color: rgb(255, 189, 177) */
-    background-image: linear-gradient(-45deg,rgb(133, 133, 133),rgb(39, 14, 14),#000000, #292631,#ffffff)
-    /* background-image: linear-gradient(130deg,#000000, #292631,#0c0c0c,#000000, #292631,#0c0c0c); */
+    background-color: #fff;
+    /* background-image: linear-gradient(-45deg,rgb(133, 133, 133),rgb(39, 14, 14),#000000, #292631,#ffffff) */
 }
 
 html,body{
@@ -148,7 +147,7 @@ nav a:hover{
     font-weight: bold;
     margin-left: 40vw;
     padding: 2rem;
-    color: var(--header-font-color);
+    color: black;
     letter-spacing: 0.1rem;
    
 }
@@ -159,12 +158,23 @@ nav a:hover{
     justify-content: space-evenly;
 }
 
+@keyframes animation1 {
+    from{
+        transform: translateY(-50px);
+    }
+    to{
+        transform: translateY(0px);
+    }
+}
+
 .skill{
      display: flex;
      /* width: 20vw; */
      justify-content: center;
      padding: 2rem;
      flex-direction: column;
+     animation : animation1 3s forwards ease;
+
 }
 
 
@@ -196,13 +206,13 @@ nav a:hover{
     font-weight: bold;
     margin-left: 40vw;
     padding: 2rem;
-    color: var(--header-font-color);
+    color: black;
     letter-spacing: 0.1rem;
 }
 
 #project-image{
     height: 60vh;
-    width: 45vw;
+    width: 100%;
 }
 
 .projects-container{
@@ -210,8 +220,17 @@ nav a:hover{
     grid-template-columns: 1fr 1fr;
 }
 
+@keyframes animation2 {
+    from{
+        transform: translateX(-20px);
+    }
+    to{
+        transform: translateX(0px);
+    }
+}
+
 .project-details{
-    box-shadow: 5px 5px 10px 5px rgb(8, 8, 8);
+    /* box-shadow: 5px 5px 10px 5px rgb(8, 8, 8); */
     margin: 2rem;
     width: 45vw;
     display: grid;
@@ -219,7 +238,15 @@ nav a:hover{
     place-items: center;
     padding-bottom: 2rem;
     color: #1a2e2e;
+    animation : animation2 3s forwards ease;
 }
+
+.project-details:hover{
+    box-shadow: 2px 5px 10px 1px rgb(8, 8, 8);
+}
+
+
+
 
 .project-details i{
     color: #142424;
@@ -318,6 +345,7 @@ hr{
 
  .burger{
         display: block;
+        margin-right: -45px;
     }
     
 
@@ -327,7 +355,7 @@ hr{
     }
     ul{
         top: 10vh;
-        position: fixed;
+        position: absolute;
         display: flex;
         justify-content: space-between;
         width: 40vw;
@@ -337,6 +365,7 @@ hr{
         transform: translateX(100%);
         transition: 1s ease;
     }
+
 
     nav a{
         text-decoration: none;
@@ -425,6 +454,13 @@ hr{
          
      }
 
+
+     
+    
+
+
+     
+
      .container{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -479,7 +515,7 @@ hr{
         justify-content: space-around;
         align-items: center;
         background-color: transparent;
-        top:30vh;
+        top:25vh;
         left:10vw;
         width: 80vw;
     }
@@ -509,3 +545,5 @@ hr{
         margin-bottom: 1.1rem;
     }
 }
+
+
